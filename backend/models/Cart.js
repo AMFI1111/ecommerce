@@ -20,7 +20,7 @@ const Cart = sequelize.define('Cart', {
     defaultValue: []
   }
 }, {
-  timestamps: true,
+  timestamps: false,
   tableName: 'carts'
 });
 

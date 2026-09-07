@@ -1,6 +1,11 @@
 require('dotenv').config();
 const sequelize = require('./config/database');
 const Product = require('./models/Product');
+const User = require('./models/User');
+const Cart = require('./models/Cart');
+const Wishlist = require('./models/Wishlist');
+const Review = require('./models/Review');
+const Order = require('./models/Order');
 
 const products = [
   {

@@ -36,8 +36,7 @@ router.post('/', auth, async (req, res) => {
 router.get('/', auth, async (req, res) => {
   try {
     const orders = await Order.findAll({ 
-      where: { userId: req.user.userId },
-      order: [['createdAt', 'DESC']]
+      where: { userId: req.user.userId }
     });
     res.json(orders);
   } catch (error) {

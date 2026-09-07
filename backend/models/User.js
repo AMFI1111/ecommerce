@@ -36,7 +36,7 @@ const User = sequelize.define('User', {
   },
   phone: DataTypes.STRING
 }, {
-  timestamps: true,
+  timestamps: false,
   tableName: 'users',
   hooks: {
     beforeCreate: async (user) => {
